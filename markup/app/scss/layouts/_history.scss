@@ -1,0 +1,26 @@
+#history{
+    padding: 9% 0;
+}
+
+.history-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-history-txt{
+    width: 40%;
+}
+
+.history-pic{
+    width: 50%;
+}
+
+.history-txt{
+    margin: 0 0 46px;
+}
+
+.history-txt-title{
+    font-weight: 700;
+    display: block;
+}

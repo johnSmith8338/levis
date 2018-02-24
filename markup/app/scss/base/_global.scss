@@ -32,3 +32,24 @@ h3,
 p {
     margin: 0 0 10px;
 }
+
+.underline {
+    width: 150px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section-title-block{
+    text-transform: uppercase;
+    color: $color-red;
+    margin: 0 0 44px;
+    .section-title-txt{
+        font-size: 16px;
+        margin: 0 0 20px;
+    }
+    .section-title{
+        font-size: 48px;
+        font-weight: 900;
+        margin: 0 0 58px;
+    }
+}
