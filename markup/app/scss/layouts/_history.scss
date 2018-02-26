@@ -1,26 +1,38 @@
-#history{
+#history {
     padding: 9% 0;
 }
 
-.history-wrapper{
+.history-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include media('<desktop'){
+        flex-direction: column;
+    }
 }
 
-.main-history-txt{
+.main-history-txt {
     width: 40%;
+    @include media('<desktop') {
+        width: 100%;
+    }
 }
 
-.history-pic{
+.history-pic {
     width: 50%;
+    @include media('<desktop') {
+        width: 100%;
+    }
 }
 
-.history-txt{
+.history-txt {
     margin: 0 0 46px;
+    @include media('<=tablet'){
+        margin: 0 0 10px;
+    }
 }
 
-.history-txt-title{
+.history-txt-title {
     font-weight: 700;
     display: block;
 }

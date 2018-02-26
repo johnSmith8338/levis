@@ -1,13 +1,22 @@
 .banner {
     height: 100vh;
-    position: relative;
+    background-image: url(../images/banner-img.jpg);
+    display: flex;
+    align-items: center;
+}
+
+.banner-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-picture{
+    width: 40%;
 }
 
 .banner-description {
-    width: 36%;
-    position: absolute;
-    top: 17%;
-    right: 9%;
+    width: 40%;
     background-color: #fff;
     padding: 72px 42px 50px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
@@ -19,6 +28,7 @@
 
 .description-title {
     font-size: 36px;
+    line-height: 40px;
     font-weight: 900;
     color: $color-red;
     margin: 0 0 32px;
@@ -34,6 +44,7 @@
 }
 
 .description-button {
+    text-align: center;
     a {
         font-size: 16px;
         padding: 11px 23px;
