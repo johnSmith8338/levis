@@ -1,0 +1,79 @@
+.one-model-desc {
+    .desc-title-block {
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    .desc-title-txt {
+        margin: 0 0 20px;
+    }
+    .desc-title {
+        color: $color-red;
+        font-weight: bolder;
+        font-size: 36px;
+        margin: 0 0 38px;
+    }
+    .underline {
+        text-align: left;
+        margin: 0 0 38px;
+    }
+}
+
+.one-model-price {
+    font-size: 48px;
+    color: $color-red;
+    display: flex;
+    align-items: center;
+    margin: 0 0 47px;
+}
+
+.one-model-price-name {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+}
+
+.one-model-price-sale {
+    font-size: 16px;
+    color: #c4c4c4;
+    text-decoration: line-through;
+    margin: 0 0 0 24px;
+}
+
+.model-desc-list {
+    margin: 0 0 66px;
+    padding: 0 0 24px;
+    list-style: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    width: 95%;
+}
+
+.model-desc-item {
+    margin: 0 0 10px;
+}
+
+.model-desc-item-name {}
+
+.model-desc-item-sign {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.model-desc-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .button {
+        margin: 0 18% 0px 0px;
+        a {
+            font-size: 16px;
+            padding: 12px 36px;
+        }
+    }
+}
+
+.model-desc-order-size {
+    font-size: 14px;
+    color: $main-color;
+    text-decoration: none;
+    &:hover{
+        border-bottom: 1px solid $color-red;
+    }
+}

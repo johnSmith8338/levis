@@ -1,5 +1,6 @@
 @import "vendor/include-media";
 @import "vendor/normalize";
+@import "vendor/slick";
 
 @import "utils/variables";
 
@@ -16,3 +17,7 @@
 @import "layouts/banner";
 @import "layouts/history";
 @import "layouts/advantages";
+@import "layouts/catalog-all";
+@import "layouts/catalog-one-slid";
+@import "layouts/catalog-one";
+@import "layouts/one-desc";
