@@ -3,6 +3,7 @@
 @import "vendor/slick";
 
 @import "utils/variables";
+@import "utils/mixin";
 
 @import "base/global";
 @import "base/fonts";
@@ -11,8 +12,9 @@
 @import "components/logo";
 @import "components/button";
 @import "components/add-cross";
+@import "components/modal";
 @import "components/fancybox";
-
+@import "components/to-top";
 
 @import "layouts/header";
 @import "layouts/banner";

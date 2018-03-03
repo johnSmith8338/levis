@@ -3,16 +3,33 @@
     background-image: url(../images/banner-img.jpg);
     display: flex;
     align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    @include media('<=tablet'){
+        height: 100%;
+        padding: 50px 0 15px;
+    }
 }
 
-.banner-wrapper{
+.banner-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include media('<=desktop') {
+        flex-direction: column;
+    }
 }
 
-.banner-picture{
+.banner-picture {
     width: 40%;
+    @include media('<=desktop') {
+        margin: 0 0 10px;
+        align-self: left;
+        width: 50%;
+    }
+    @include media('<=tablet'){
+        width: 70%;
+    }
 }
 
 .banner-description {
@@ -20,10 +37,17 @@
     background-color: #fff;
     padding: 72px 42px 50px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+    @include media('<=desktop') {
+        width: 100%;
+        padding: 40px;
+    }
 }
 
 .description-title-block {
     margin: 0 0 34px;
+    @include media('<=desktop') {
+        margin: 0 0 10px;
+    }
 }
 
 .description-title {
@@ -32,15 +56,26 @@
     font-weight: 900;
     color: $color-red;
     margin: 0 0 32px;
+    @include media('<=desktop') {
+        font-size: 30px;
+        margin: 0 0 10px;
+        line-height: 32px;
+    }
 }
 
 .description-title-sign {
     font-size: 14px;
     margin: 0 0 30px;
+    @include media('<=desktop') {
+        margin: 0 0 10px;
+    }
 }
 
 .description-txt {
     margin: 0 0 40px;
+    @include media('<=desktop') {
+        margin: 0 0 20px;
+    }
 }
 
 .description-button {

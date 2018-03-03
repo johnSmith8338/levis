@@ -1,6 +1,9 @@
 .nav-wrapper{
     display: flex;
     align-items: center;
+    @include media('<desktop'){
+        display: block;
+    }
 }
 
 #nav {
@@ -10,6 +13,12 @@
     font-family: $main-font-fam;
     color: $main-color;
     font-size: 17px;
+    @include media('<desktop'){
+        margin: 0 0 10px;
+    }
+    @include media('<=tablet'){
+        display: none;
+    }
     .current{
         color: $color-red;
     }
@@ -28,6 +37,12 @@
 
 .burger-menu {
     display: none;
+    @include media('<=tablet'){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .burger-menu [class^="icon-"] {

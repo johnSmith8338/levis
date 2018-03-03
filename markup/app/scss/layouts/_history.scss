@@ -1,5 +1,8 @@
 #history {
     padding: 8% 0;
+    @include media('<=tablet'){
+        padding: 10% 0;
+    }
 }
 
 .history-wrapper {

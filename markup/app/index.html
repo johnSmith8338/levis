@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <title></title>
-
 </head>
 
 <body>
@@ -27,7 +26,7 @@
                             <li><a href="#testimonials">отзывы</a></li>
                         </ul>
                         <div class="button-wrapper">
-                            <div class="button"><a href="#">заказать</a></div>
+                            <div class="button"><a href="#" id="order-go">заказать</a></div>
                         </div>
                     </nav>
                 </div>
@@ -49,7 +48,7 @@
                             Одни из самых прочных ботинок в вашей коллекции. Выполнены с учетом проверенных временем стандартов прочности Levi's®. Одни из самых прочных ботинок в вашей коллекции. Выполнены с учетом проверенных временем
                         </p>
                         <div class="description-button">
-                            <div class="button"><a href="#">оформить заказ</a></div>
+                            <div class="button"><a href="#" id="order-go">оформить заказ</a></div>
                         </div>
                     </div>
                 </div>
@@ -309,9 +308,9 @@
                             </ul>
                             <div class="model-desc-order">
                                 <div class="model-desc-order-size-holder">
-                                    <a href="" class="model-desc-order-size">таблица размеров</a>
+                                    <a href="" class="model-desc-order-size" id="size-go">таблица размеров</a>
                                 </div>
-                                <div class="button"><a href="#">оформить заказ</a></div>
+                                <div class="button"><a href="#" id="order-go">оформить заказ</a></div>
                             </div>
                         </div>
                     </div>
@@ -327,28 +326,28 @@
                 </div>
                 <div class="galery-photo-holder">
                     <div class="galery-photo-1">
-                        <a href="./images/galery1.png" class="fancybox" data-fancybox-group="gallery"><img src="images/galery1.png" alt=""></a>
+                        <a href="./images/galery1-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery1.png" alt=""></a>
                         <span class="icon-magnifying-glass"></span>
                     </div>
                     <div class="galery-photo-2">
-                        <img src="images/galery2.png" alt="">
-                        <a href="#" class="galery-photo-hover"><span class="icon-magnifying-glass"></span></a>
+                        <a href="./images/galery2-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery2.png" alt=""></a>
+                        <span class="icon-magnifying-glass"></span>
                     </div>
                     <div class="galery-photo-2">
-                        <img src="images/galery2.png" alt="">
-                        <a href="#" class="galery-photo-hover"><span class="icon-magnifying-glass"></span></a>
+                        <a href="./images/galery2-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery2.png" alt=""></a>
+                        <span class="icon-magnifying-glass"></span>
                     </div>
                     <div class="galery-photo-1">
-                        <img src="images/galery1.png" alt="">
-                        <a href="#" class="galery-photo-hover"><span class="icon-magnifying-glass"></span></a>
+                        <a href="./images/galery1-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery1.png" alt=""></a>
+                        <span class="icon-magnifying-glass"></span>
                     </div>
                     <div class="galery-photo-1">
-                        <img src="images/galery1.png" alt="">
-                        <a href="#" class="galery-photo-hover"><span class="icon-magnifying-glass"></span></a>
+                        <a href="./images/galery1-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery1.png" alt=""></a>
+                        <span class="icon-magnifying-glass"></span>
                     </div>
                     <div class="galery-photo-2">
-                        <img src="images/galery2.png" alt="">
-                        <a href="#" class="galery-photo-hover"><span class="icon-magnifying-glass"></span></a>
+                        <a href="./images/galery2-b.jpg" class="fancybox" data-fancybox-group="gallery"><img src="images/galery2.png" alt=""></a>
+                        <span class="icon-magnifying-glass"></span>
                     </div>
                 </div>
             </div>
@@ -448,7 +447,7 @@
                         <p class="footer-top-adv">
                             При покупке осенней обуви <strong>скидка 250 грн</strong> на зимние ботинки
                         </p>
-                        <div class="button"><a href="#">заказать</a></div>
+                        <div class="button"><a href="#" id="order-go">заказать</a></div>
                     </div>
                 </div>
             </div>
@@ -463,14 +462,109 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-order-wrapper">
+            <div id="modal-order-form">
+                <span id="modal-close"><span class="icon-close-cross"></span></span>
+                <div class="modal-order-content">
+                    <form action="#" class="order-form">
+                        <h4 class="order-title">форма заказа</h4>
+                        <ul class="order-list">
+                            <li class="order-item">
+                                <p class="order-item-name">Имя</p>
+                                <input type="text" class="order-item-field">
+                            </li>
+                            <li class="order-item">
+                                <p class="order-item-name">Фамилия</p>
+                                <input type="text" class="order-item-field">
+                            </li>
+                            <li class="order-item">
+                                <p class="order-item-name">Товар</p>
+                                <div class="goods-button-wrapper">
+                                    <div class="select-arrow-holder">
+                                        <div class="select-arrow"></div>
+                                    </div>
+                                    <select name="goods" class="goods-button">
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                        <option value="selected-product">Ботинки Levi’s Leather jax boots</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="order-item">
+                                <p class="order-item-name">Размер</p>
+                                <div class="goods-size-wrapper">
+                                    <div class="select-arrow-holder">
+                                        <div class="select-arrow"></div>
+                                    </div>
+                                    <select name="goods-size" class="goods-size-button">
+                                        <option value="selected-size">40</option>
+                                        <option value="selected-size">41</option>
+                                        <option value="selected-size">42</option>
+                                        <option value="selected-size">43</option>
+                                        <option value="selected-size">44</option>
+                                        <option value="selected-size">45</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="order-confirm" type="submit">подтвердить заказ</button>
+                    </form>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <div class="modal-size-wrapper">
+            <div id="modal-size-form">
+                <span id="modal-close"><span class="icon-close-cross"></span></span>
+                <div class="modal-size-content">
+                    <div class="section-title-block">
+                        <h2 class="section-title">таблица размеров</h2>
+                    </div>
+                    <div class="size-list-holder">
+                        <ul class="size-list">
+                            <li class="size-item-title">Европейский</li>
+                            <li class="size-item"><a href="#">40</a></li>
+                            <li class="size-item"><a href="#">41</a></li>
+                            <li class="size-item"><a href="#">42</a></li>
+                            <li class="size-item"><a href="#">43</a></li>
+                            <li class="size-item"><a href="#">44</a></li>
+                            <li class="size-item"><a href="#">45</a></li>
+                        </ul>
+                    </div>
+                    <div class="size-list-holder">
+                        <ul class="size-list">
+                            <li class="size-item-title">Длина стопы, см</li>
+                            <li class="size-item"><a href="#">25</a></li>
+                            <li class="size-item"><a href="#">26</a></li>
+                            <li class="size-item"><a href="#">26,5</a></li>
+                            <li class="size-item"><a href="#">27,5</a></li>
+                            <li class="size-item"><a href="#">28</a></li>
+                            <li class="size-item"><a href="#">29</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
     </div>
+<!--    <a id="scrollup" href="#">
+        <div class="arrow-top-1"></div>
+        <div class="arrow-top-2"></div>
+        <div class="arrow-top-3"></div>
+    </a>-->	
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="./fancybox/jquery.mousewheel.pack.js"></script>
     <script src="js/jquery.nav.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+<!--    <script src="js/jquery-2.2.1.min.js"></script>-->
+	<script src="js/go_top.js"></script>
 </body>
 
 </html>
