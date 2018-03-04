@@ -46,6 +46,9 @@
         position: absolute;
         top: 0%;
         right: -3%;
+        @include media('<=tablet') {
+            width: 29%;
+        }
     }
 }
 
@@ -76,6 +79,10 @@
     position: absolute;
     top: 8%;
     left: 300%;
+    @include media('<=desktop') {
+        top: -80%;
+        left: 218%;
+    }
     &:after {
         content: '';
         border-top: 1px solid #000;
@@ -85,6 +92,15 @@
         position: absolute;
         top: 12%;
         left: -31%;
+        @include media('<=desktop') {
+            width: 26%;
+            left: -26%;
+            height: 13%;
+        }
+        @include media('<=tablet') {
+            width: 31%;
+            left: -31%;
+        }
     }
 }
 
@@ -124,6 +140,9 @@
         position: absolute;
         top: 12%;
         right: 1%;
+        @include media('<=tablet') {
+            width: 24%;
+        }
     }
 }
 
@@ -154,6 +173,13 @@
     position: absolute;
     top: 400%;
     right: -300%;
+    @include media('<=desktop') {
+        top: 375%;
+        right: -120%;
+    }
+    @include media('<=tablet') {
+        top: 295%;
+    }
     &:after {
         content: '';
         border-right: 1px solid #000;
@@ -162,6 +188,19 @@
         position: absolute;
         bottom: 100%;
         left: 44%;
+        @include media('<=desktop') {
+            border-bottom: 1px solid #000;
+            height: 99%;
+            width: 12%;
+            bottom: 88%;
+            left: 62%;
+        }
+        @include media('<=tablet') {
+            height: 66%;
+            width: 0;
+            bottom: 100%;
+            left: 68%;
+        }
     }
 }
 
@@ -201,11 +240,18 @@
         position: absolute;
         bottom: 88%;
         right: 5%;
+        @include media('<=tablet') {
+            width: 20%;
+        }
     }
 }
 
 .hover-block {
     width: 240px;
+    @include media('<=tablet') {
+        width: 200px;
+        font-size: 14px;
+    }
 }
 
 .hover-title {
@@ -217,4 +263,7 @@
     display: inline-block;
     border: 1px solid;
     margin: 0 0 14px;
+    @include media('<=tablet') {
+        margin: 0 0 5px;
+    }
 }

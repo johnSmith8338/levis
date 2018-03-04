@@ -287,19 +287,25 @@ function initSlider() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: false,
+        fade: true,
         dots: true,
         autoplay: true,
         draggable: false,
         prevArrow: '<div class="prev-arrow"><div class="left-arrow"></div></div>',
-        nextArrow: '<div class="next-arrow"><div class="right-arrow"></div></div>'
+        nextArrow: '<div class="next-arrow"><div class="right-arrow"></div></div>',
     });
 }
 
 // hidden-menu
 function mobileMenu() {
-    $(".burger-menu").click(function () {
-        $("#nav").toggleClass('nav-active');
+    jQuery('.nav-wrapper').click(function () {
+        $('#nav').show();
+    });
+    jQuery('#page').click(function (event) {
+        var eventInMenu = $(event.target).parents('.nav-wrapper');
+        if (!eventInMenu.length) {
+            $('#nav').hide();
+        }
     });
 }
 

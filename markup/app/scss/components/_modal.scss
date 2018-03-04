@@ -160,14 +160,23 @@
     padding: 50px 70px 78px;
     color: #333;
     font-size: 14px;
+    @include media('<=tablet'){
+        padding: 10px;
+    }
     .section-title-block{
         margin: 0 0 30px;
         text-align: center;
+        @include media('<=tablet'){
+            margin: 0 0 10px;
+        }
     }
     .section-title {
         font-size: 36px;
         line-height: 42px;
         margin: 0 0 10px;
+        @include media('<=tablet'){
+            font-size: 26px;
+        }
     }
 }
 

@@ -13,6 +13,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 5% 0 4%;
+    @include media('<=tablet'){
+        font-size: 26px;
+        flex-direction: column;
+    }
     .button a {
         font-size: 16px;
         padding: 10px 70px;
@@ -22,6 +26,12 @@
 .footer-top-adv {
     width: 54%;
     line-height: 42px;
+    @include media('<=tablet'){
+        width: 100%;
+    }
+    @include media('<=phone'){
+        line-height: 24px;
+    }
 }
 
 .footer-bottom{
@@ -29,6 +39,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media('<=phone'){
+        flex-direction: column;
+    }
 }
 
 .footer-bottom-txt{

@@ -1,7 +1,7 @@
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
     align-items: center;
-    @include media('<desktop'){
+    @include media('<desktop') {
         display: block;
     }
 }
@@ -13,13 +13,13 @@
     font-family: $main-font-fam;
     color: $main-color;
     font-size: 17px;
-    @include media('<desktop'){
+    @include media('<desktop') {
         margin: 0 0 10px;
     }
-    @include media('<=tablet'){
+    @include media('<=tablet') {
         display: none;
     }
-    .current{
+    .current {
         color: $color-red;
     }
     li {
@@ -35,13 +35,17 @@
     }
 }
 
-.burger-menu {
+.burger-menu-holder {
     display: none;
-    @include media('<=tablet'){
+    @include media('<=tablet') {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
+    }
+    a {
+        display: block;
+        text-decoration: none;
     }
 }
 

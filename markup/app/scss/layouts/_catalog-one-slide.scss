@@ -26,6 +26,19 @@ ul.slickslide li img,
     right: auto;
     position: absolute;
     line-height: 0;
+    @include media ('<=tablet') {
+        bottom: -40px;
+        left: 27%;
+    }
+    @include media ('<=phone') {
+        left: 10%;
+        bottom: -50px;
+    }
+    @include media ('<=400px') {
+        left: 0;
+        bottom: -60px;
+        padding: 0;
+    }
 }
 
 .slick-dots li,

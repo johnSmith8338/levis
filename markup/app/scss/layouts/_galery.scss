@@ -3,15 +3,24 @@
     .section-title-block {
         text-align: center;
         margin: 0 0 11%;
+        @include media ('<=desktop') {
+            margin: 0 0 20px;
+        }
     }
     .underline-center {
         margin: 0 auto 36px;
         width: 150px;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.3);
+        @include media ('<=desktop') {
+            margin: 0 auto 10px;
+        }
     }
     .section-title {
         margin: 0 0 32px;
+        @include media ('<=desktop') {
+            margin: 0 0 10px;
+        }
     }
     .section-title-txt {
         font-size: 16px;
@@ -20,16 +29,28 @@
 }
 
 .galery-photo-holder {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    max-height: 704px;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 30px;
+    @include media ('<=tablet') {
+        column-count: 2;
+        column-gap: 20px;
+    }
+    @include media ('<=phone') {
+        column-count: 1;
+        column-gap: 10px;
+    }
 }
 
 .galery-photo-1 {
     position: relative;
-    max-height: 266px;
-    margin: 0 15px 30px;
+    margin: 0 0 30px;
+    @include media ('<=tablet') {
+        margin: 0 0 20px;
+    }
+    @include media ('<=phone') {
+        margin: 0 0 10px;
+    }
     a {
         display: block;
     }
@@ -37,8 +58,13 @@
 
 .galery-photo-2 {
     position: relative;
-    max-height: 378px;
-    margin: 0 15px 30px;
+    margin: 0 0 30px;
+    @include media ('<=tablet') {
+        margin: 0 0 20px;
+    }
+    @include media ('<=phone') {
+        margin: 0 0 10px;
+    }
     a {
         display: block;
     }
@@ -57,5 +83,5 @@
 }
 
 .fancybox:hover ~ .icon-magnifying-glass {
-        opacity: 1;
+    opacity: 1;
 }

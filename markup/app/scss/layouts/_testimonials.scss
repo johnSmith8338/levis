@@ -4,15 +4,24 @@
     .section-title-block {
         text-align: center;
         margin: 0 0 11%;
+        @include media ('<=900px') {
+            margin: 0 0 20px;
+        }
     }
     .underline-center {
         margin: 0 auto 32px;
         width: 150px;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.3);
+        @include media ('<=900px') {
+            margin: 0 auto 10px;
+        }
     }
     .section-title {
         margin: 0 0 32px;
+        @include media ('<=900px') {
+            margin: 0 0 10px;
+        }
     }
     .section-title-txt {
         font-size: 15px;
@@ -90,6 +99,13 @@
     top: 50%;
     left: -50%;
     cursor: pointer;
+    @include media ('<=900px') {
+        left: -20%;
+    }
+    @include media ('<=620px'){
+        top: 2%;
+        left: 2%;
+    }
     .left-arrow {
         width: 20px;
         height: 20px;
@@ -113,6 +129,13 @@
     top: 50%;
     right: -50%;
     cursor: pointer;
+    @include media ('<=900px') {
+        right: -20%;
+    }
+    @include media ('<=620px'){
+        top: 2%;
+        right: 2%;
+    }
     .right-arrow {
         width: 20px;
         height: 20px;
