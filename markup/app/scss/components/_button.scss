@@ -9,7 +9,7 @@
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
-        @include media('<desktop'){
+        @include media('<=desktop'){
             float: right;
         }
         &:hover{
@@ -20,7 +20,7 @@
 .button-wrapper{
     margin: 0 0 0 34px;
     @include clearfix;
-    @include media('<=tablet'){
+    @include media('<tablet'){
         position: absolute;
         top: 100%;
         right: 0;

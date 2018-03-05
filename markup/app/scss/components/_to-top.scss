@@ -9,6 +9,7 @@
     border-radius: 50%;
     cursor: pointer;
     display: none;
+    transition: all 0.5s ease-in-out;
     &:hover {
         background-color: #a70f29;
         .arrow-top-1{

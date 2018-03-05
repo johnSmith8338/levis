@@ -17,7 +17,7 @@
         width: 740px;
         padding: 20px;
     }
-    @include media('<=tablet') {
+    @include media('<tablet') {
         width: 460px;
     }
     @include media ('<=phone'){
@@ -51,7 +51,7 @@
     margin: 0 -15px 30px;
     display: flex;
     flex-wrap: wrap;
-    @include media('<=tablet') {
+    @include media('<tablet') {
         flex-direction: column;
         margin: 0;
         width: 100%;
@@ -61,7 +61,7 @@
 .order-item {
     width: 50%;
     padding: 0 15px 30px;
-    @include media('<=tablet') {
+    @include media('<tablet') {
         width: 100%;
         padding: 0;
         margin: 0 0 10px;
@@ -197,7 +197,7 @@
     .section-title-block {
         margin: 0 0 30px;
         text-align: center;
-        @include media('<=tablet') {
+        @include media('<tablet') {
             margin: 0 0 10px;
         }
     }

@@ -3,27 +3,27 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 15% 0 8%;
-    @include media ('<desktop'){
+    @include media ('<=desktop'){
         padding: 10% 0 1%;
         flex-direction: column;
     }
-    @include media ('<=tablet'){
+    @include media ('<tablet'){
         padding: 14% 0 1%;
     }
 }
 .slickslide{
     width: 45%;
-    @include media ('<desktop'){
+    @include media ('<=desktop'){
         width: 60%;
         order: 1;
     }
-    @include media ('<=tablet'){
+    @include media ('<tablet'){
         width: 100%;
     }
 }
 .one-model-desc{
     width: 45%;
-    @include media ('<desktop'){
+    @include media ('<=desktop'){
         width: 100%;
         order: 0;
     }

@@ -1,7 +1,7 @@
 .nav-wrapper {
     display: flex;
     align-items: center;
-    @include media('<desktop') {
+    @include media('<=desktop') {
         display: block;
     }
 }
@@ -13,10 +13,10 @@
     font-family: $main-font-fam;
     color: $main-color;
     font-size: 17px;
-    @include media('<desktop') {
+    @include media('<=desktop') {
         margin: 0 0 10px;
     }
-    @include media('<=tablet') {
+    @include media('<tablet') {
         display: none;
         width: 100%;
         position: absolute;
@@ -28,6 +28,9 @@
         background-color: #f5f5f5;
         padding: 10px;
         z-index: 2;
+        &.nav-active{
+            display: block;
+        }
     }
     .current {
         color: $color-red;
@@ -35,7 +38,7 @@
     li {
         display: inline-block;
         margin: 0 0 0 34px;
-        @include media('<=tablet') {
+        @include media('<tablet') {
             display: block;
             margin: 0 0 10px;
         }
@@ -51,7 +54,7 @@
 
 .burger-menu {
     display: none;
-    @include media('<=tablet') {
+    @include media('<tablet') {
         display: block;
         position: absolute;
         top: 0;

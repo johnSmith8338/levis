@@ -7,8 +7,8 @@
         @include media ('<=900px') {
             margin: 0 0 20px;
         }
-        @include media ('<=tablet'){
-            padding: 116px 0;
+        @include media ('<tablet'){
+            padding: 116px 0 0;
         }
     }
     .underline-center {
@@ -102,12 +102,17 @@
     top: 50%;
     left: -50%;
     cursor: pointer;
+    transition: all 1s linear;
     @include media ('<=900px') {
         left: -20%;
     }
     @include media ('<=620px'){
         top: 2%;
         left: 2%;
+    }
+    &:hover{
+        transform: rotate(-360deg);
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
     }
     .left-arrow {
         width: 20px;
@@ -132,12 +137,17 @@
     top: 50%;
     right: -50%;
     cursor: pointer;
+    transition: all 1s linear;
     @include media ('<=900px') {
         right: -20%;
     }
     @include media ('<=620px'){
         top: 2%;
         right: 2%;
+    }
+    &:hover{
+        transform: rotate(360deg);
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
     }
     .right-arrow {
         width: 20px;

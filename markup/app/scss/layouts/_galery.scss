@@ -3,7 +3,7 @@
     .section-title-block {
         text-align: center;
         margin: 0 0 11%;
-        @include media ('<=desktop') {
+        @include media ('<desktop') {
             margin: 0 0 20px;
         }
         @include media ('<=tablet'){
@@ -15,13 +15,13 @@
         width: 150px;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.3);
-        @include media ('<=desktop') {
+        @include media ('<desktop') {
             margin: 0 auto 10px;
         }
     }
     .section-title {
         margin: 0 0 32px;
-        @include media ('<=desktop') {
+        @include media ('<desktop') {
             margin: 0 0 10px;
         }
     }

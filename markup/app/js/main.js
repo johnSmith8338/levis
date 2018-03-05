@@ -297,17 +297,8 @@ function initSlider() {
 
 // hidden-menu
 function mobileMenu() {
-    /*jQuery('.nav-wrapper').click(function () {
-        $('#nav').show();
-    });
-    jQuery('#page').click(function (event) {
-        var eventInMenu = $(event.target).parents('.nav-wrapper');
-        if (!eventInMenu.length) {
-            $('#nav').hide();
-        }
-    });*/
     $(".burger-menu").click(function () {
-      $(this).siblings("#nav").slideToggle("slow");
+      $(this).siblings("#nav").toggleClass("nav-active");
     });
 }
 
