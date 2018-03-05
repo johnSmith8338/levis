@@ -1,5 +1,8 @@
 #delivery {
     padding: 7% 0 0;
+    @include media ('<=tablet'){
+            padding: 116px 0;
+        }
 }
 
 .delivery-holder {

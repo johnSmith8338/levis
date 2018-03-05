@@ -7,6 +7,9 @@
         @include media ('<=900px') {
             margin: 0 0 20px;
         }
+        @include media ('<=tablet'){
+            padding: 116px 0;
+        }
     }
     .underline-center {
         margin: 0 auto 32px;

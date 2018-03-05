@@ -297,7 +297,7 @@ function initSlider() {
 
 // hidden-menu
 function mobileMenu() {
-    jQuery('.nav-wrapper').click(function () {
+    /*jQuery('.nav-wrapper').click(function () {
         $('#nav').show();
     });
     jQuery('#page').click(function (event) {
@@ -305,6 +305,9 @@ function mobileMenu() {
         if (!eventInMenu.length) {
             $('#nav').hide();
         }
+    });*/
+    $(".burger-menu").click(function () {
+      $(this).siblings("#nav").slideToggle("slow");
     });
 }
 

@@ -49,7 +49,7 @@
     }
 }
 
-.burger-menu-holder {
+.burger-menu {
     display: none;
     @include media('<=tablet') {
         display: block;
@@ -57,13 +57,12 @@
         top: 0;
         right: 0;
     }
+    & [class^="icon-"] {
+        font-size: 30px;
+        color: $main-color;
+    }
     a {
         display: block;
         text-decoration: none;
     }
-}
-
-.burger-menu [class^="icon-"] {
-    font-size: 30px;
-    color: $main-color;
 }
