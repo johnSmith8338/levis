@@ -5,7 +5,6 @@ $(document).ready(function () {
     initSlider();
     ModalWindowOrder();
     ModalWindowSize();
-    imageGallery();
     toTop();
     mobileMenu();
 });
@@ -17,7 +16,7 @@ function catalogSlide() {
         arrows: false,
         infinite: true,
         speed: 500,
-        fade: false,
+        fade:  true,
         slide: 'li',
         cssEase: 'linear',
         centerMode: true,
@@ -82,7 +81,7 @@ function ModalWindowOrder() {
     });
 }
 
-// Modal-order
+// Modal-size
 function ModalWindowSize() {
     $('a#size-go').click(function (event) {
         event.preventDefault();

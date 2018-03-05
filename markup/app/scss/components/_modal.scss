@@ -4,15 +4,22 @@
     background: #fff;
     position: fixed;
     left: 50%;
-    margin-left: -405px;
-    margin-top: -25vh;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: none;
     opacity: 0;
     z-index: 5;
-    padding: 50px 70px 78px;
+    padding: 50px;
     color: #333;
     font-size: 14px;
     box-shadow: 0 28px 57px rgba(0, 0, 0, 0.7);
+    @include media('<=830px') {
+        width: 740px;
+        padding: 20px;
+    }
+    @include media('<=tablet') {
+        width: 460px;
+    }
 }
 
 .order-form {
@@ -36,12 +43,22 @@
     padding: 0;
     margin: 0 -15px 30px;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    @include media('<=tablet') {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .order-item {
     width: 50%;
     padding: 0 15px 30px;
+    @include media('<=tablet') {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px;
+    }
 }
 
 .order-item-name {
@@ -147,26 +164,30 @@
 }
 
 #modal-size-form {
-    width: 584;
+    width: 576px;
     border-radius: 5px;
     background: #fff;
     position: fixed;
     left: 50%;
-    margin-left: -282px;
-    margin-top: -25vh;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: none;
     opacity: 0;
     z-index: 5;
-    padding: 50px 70px 78px;
+    padding: 50px;
     color: #333;
     font-size: 14px;
-    @include media('<=tablet'){
+    @include media('<=tablet') {
         padding: 10px;
+        width: 496px;
     }
-    .section-title-block{
+    @include media('<=520px') {
+        width: 300px;
+    }
+    .section-title-block {
         margin: 0 0 30px;
         text-align: center;
-        @include media('<=tablet'){
+        @include media('<=tablet') {
             margin: 0 0 10px;
         }
     }
@@ -174,8 +195,8 @@
         font-size: 36px;
         line-height: 42px;
         margin: 0 0 10px;
-        @include media('<=tablet'){
-            font-size: 26px;
+        @include media('<=tablet') {
+            font-size: 20px;
         }
     }
 }
@@ -187,6 +208,11 @@
     font-size: 14px;
     font-weight: 700;
     color: #333;
+    @include media('<=520px') {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
     a {
         color: inherit;
         text-decoration: none;
