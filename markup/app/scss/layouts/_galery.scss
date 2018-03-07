@@ -6,7 +6,7 @@
         @include media ('<desktop') {
             margin: 0 0 20px;
         }
-        @include media ('<=tablet'){
+        @include media ('<=tablet') {
             padding: 92px 0;
         }
     }
@@ -34,14 +34,26 @@
 .galery-photo-holder {
     margin: 0 auto;
     column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
     column-gap: 30px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
     @include media ('<=tablet') {
         column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
         column-gap: 20px;
+        -moz-column-gap: 30px;
+        -webkit-column-gap: 30px;
     }
     @include media ('<=phone') {
         column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
         column-gap: 10px;
+        -moz-column-gap: 30px;
+        -webkit-column-gap: 30px;
     }
 }
 
@@ -58,8 +70,8 @@
         display: block;
     }
     &:hover ~ .icon-magnifying-glass {
-    opacity: 1;
-}
+        opacity: 1;
+    }
 }
 
 .galery-photo-2 {
